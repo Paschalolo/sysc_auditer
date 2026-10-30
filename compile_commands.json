@@ -1,0 +1,35 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc-14",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-Wnull-dereference",
+      "-Wshadow",
+      "-mavx2",
+      "-Wconversion",
+      "-Wduplicated-branches",
+      "-Wlogical-op",
+      "-O3",
+      "-Wformat=2",
+      "-pthread",
+      "-mavx2",
+      "-march=native",
+      "-fno-exceptions",
+      "-I",
+      "includes",
+      "-I",
+      "src",
+      "-std=c23",
+      "-o",
+      "./bin/ch",
+      "src/main.c"
+    ],
+    "directory": "/home/paschalolo/studyWeb/sysclib",
+    "file": "/home/paschalolo/studyWeb/sysclib/src/main.c",
+    "output": "/home/paschalolo/studyWeb/sysclib/bin/ch"
+  }
+]
