@@ -32,7 +32,7 @@ void audit_getpid(void) {
     }
 }
 
-int main() {
+int main(void ) {
     printf("=== Direct-Syscall Auditing Tool ===\n");
     
     if (getuid() != 0) {

@@ -24,3 +24,13 @@ This utility bridges user space and kernel space **directly** by:
 
 ---
 
+## ⚙️ Getting Started
+Prerequisites
+* A Linux environment (x86-64 or ARM64).
+* make
+```code
+    export FILE=main 
+    make run 
+
+
+NO dependencies
