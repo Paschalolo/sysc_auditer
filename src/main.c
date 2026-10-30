@@ -17,7 +17,7 @@ void audit_getpid(void) {
 
     /* Path B: Direct Raw Assembly Syscall */
     errno = 0;
-    //long direct_ret = raw_syscall(SYS_getpid);
+    long direct_ret = (long) sys_getpid(); 
     int direct_errno = errno;
 
     printf("--------------------------------------------------\n");
@@ -32,7 +32,7 @@ void audit_getpid(void) {
     }
 }
 
-int main(int argc, char *argv[]) {
+int main() {
     printf("=== Direct-Syscall Auditing Tool ===\n");
     
     if (getuid() != 0) {

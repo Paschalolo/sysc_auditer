@@ -34,4 +34,7 @@ raw_syscall :
 	syscall ; Calls the system call
 
 
-	ret ; return to caller  
+	ret ; return to caller 
+
+section .note.GNU-stack noalloc noexec nowrite progbits
+
