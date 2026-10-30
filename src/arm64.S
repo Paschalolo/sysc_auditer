@@ -41,4 +41,6 @@ raw_syscall :
 
 	mov x6 , x7 ; moves register value from x7 to x6
 	svc #0 ; This si the system call to the operating sytem 
-	ret ; return 
+	ret ; return
+
+section .note.GNU-stack noalloc noexec nowrite progbits 
