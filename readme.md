@@ -24,16 +24,3 @@ This utility bridges user space and kernel space **directly** by:
 
 ---
 
-## 📂 Project Structure
-
-```text
-direct-syscall-auditor/
-├── include/
-│   ├── auditor.h       # Core definitions and structures
-│   └── arch.h          # Architecture-specific register mappings
-├── src/
-│   ├── main.c          # CLI argument parsing and orchestrator
-│   ├── audit.c         # Audit logic and comparison engine
-│   └── x86_64.S        # Raw assembly stubs for x86-64
-├── Makefile            # Build configuration
-└── README.md'
